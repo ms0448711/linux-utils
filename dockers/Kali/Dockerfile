@@ -4,6 +4,8 @@ FROM kalilinux/kali-rolling
 
 # Update kali repo
 RUN echo "deb http://kali.download/kali kali-rolling main non-free contrib" > /etc/apt/sources.list
+RUN echo "deb http://http.kali.org/kali kali-rolling main non-free contrib" > /etc/apt/sources.list
+RUN echo "deb-src http://http.kali.org/kali kali-rolling main non-free contrib" > /etc/apt/sources.list
 
 
 # System update
